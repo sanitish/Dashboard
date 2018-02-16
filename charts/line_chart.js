@@ -1,4 +1,3 @@
-<script>
 
 var myObj;
 myObj = [{ "type":"text",
@@ -57,5 +56,3 @@ console.log(labels);
 
 }
 });
-
-</script>

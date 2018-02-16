@@ -1,4 +1,3 @@
-<script>
 
 var myObj;
 myObj = [{ "type":"text",
@@ -20,7 +19,9 @@ return val.data;
 console.log(labels);
 //console.log(myObj)
   let myChart = document.getElementById('myChart').getContext('2d');
-
+  Chart.defaults.global.defaultFontFamily = 'Lato';
+  Chart.defaults.global.defaultFontSize = 20;
+  Chart.defaults.global.defaultFontColor = '#000';
   let massPopChart = new Chart(myChart, {
 
     type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
@@ -46,19 +47,9 @@ console.log(labels);
           fontColor:'#000'
         }
       },
-      layout:{
-        padding:{
-          left:0,
-          right:0,
-          bottom:0,
-          top:0
-        }
-      },
       tooltips:{
         enabled:true
       }
 
 }
 });
-
-</script>
