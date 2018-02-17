@@ -17,15 +17,22 @@
     }
 }
 
+
 #map {
     position: relative;
     width: 100%;
     height: calc(100% - 60px);
     margin-top: 70px;
 }
-
+.cards {
+	overflow-y: scroll;
+}
 .places-buttons .btn {
     margin-bottom: 30px
+}
+body{
+	overflow-y: scroll;
+	height: 100%;
 }
 
 .space-70 {

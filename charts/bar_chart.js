@@ -21,7 +21,7 @@ console.log(labels);
   let myChart = document.getElementById('myChart').getContext('2d');
   Chart.defaults.global.defaultFontFamily = 'Lato';
   Chart.defaults.global.defaultFontSize = 20;
-  Chart.defaults.global.defaultFontColor = '#000';
+  Chart.defaults.global.defaultFontColor = '#ffffff';
   let massPopChart = new Chart(myChart, {
 
     type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
@@ -31,9 +31,13 @@ console.log(labels);
       datasets:[{
         data:data,
         //backgroundColor:'green',
+        backgroundColor:[
+          'rgba(128,128,128,0.1)',
+          'rgba(128,128,128,0.1)'
 
+              ],
         borderWidth:1,
-        borderColor:'#777',
+        borderColor:'#FFF',
         hoverBorderWidth:3,
         hoverBorderColor:'#000'
       }]

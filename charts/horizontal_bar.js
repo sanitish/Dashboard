@@ -18,24 +18,26 @@ return val.data;
 });
 console.log(labels);
 //console.log(myObj)
-  let myPieChart = document.getElementById('myPieChart').getContext('2d');
-
-  // Global Options
+  let myHoriChart = document.getElementById('myHoriChart').getContext('2d');
   Chart.defaults.global.defaultFontFamily = 'Lato';
   Chart.defaults.global.defaultFontSize = 20;
   Chart.defaults.global.defaultFontColor = '#ffffff';
+  let massHoriChart = new Chart(myHoriChart, {
 
-  let massPoChart = new Chart(myPieChart, {
-
-    type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    type:'horizontalBar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data:{
+
       labels:labels,
       datasets:[{
         data:data,
         //backgroundColor:'green',
+        backgroundColor:[
+          'rgba(128,128,128,0.1)',
+          'rgba(128,128,128,0.1)'
 
+              ],
         borderWidth:1,
-        borderColor:'#777',
+        borderColor:'#FFF',
         hoverBorderWidth:3,
         hoverBorderColor:'#000'
       }]
@@ -49,10 +51,9 @@ console.log(labels);
           fontColor:'#000'
         }
       },
-
       tooltips:{
         enabled:true
-            }
+      }
 
 }
 });

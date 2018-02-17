@@ -18,14 +18,14 @@ return val.data;
 });
 console.log(labels);
 //console.log(myObj)
-  let myPieChart = document.getElementById('myPieChart').getContext('2d');
+  let myPolarChart = document.getElementById('myPolarChart').getContext('2d');
 
   // Global Options
   Chart.defaults.global.defaultFontFamily = 'Lato';
   Chart.defaults.global.defaultFontSize = 20;
   Chart.defaults.global.defaultFontColor = '#ffffff';
 
-  let massPoChart = new Chart(myPieChart, {
+  let massPolarChart = new Chart(myPolarChart, {
 
     type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
     data:{

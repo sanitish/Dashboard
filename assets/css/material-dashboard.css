@@ -1,27 +1,4 @@
-/*!
 
- =========================================================
- * Material Dashboard - v1.2.0
- =========================================================
-
- * Product Page: http://www.creative-tim.com/product/material-dashboard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/material-dashboard/blob/master/LICENSE.md)
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
-
-
-/* ANIMATION */
-
-
-/* SHADOWS */
-
-
-/* Shadows (from mdl http://www.getmdl.io/) */
 
 .noUi-target,
 .noUi-target * {
@@ -192,12 +169,7 @@
 }
 
 
-/*!
-Animate.css - http://daneden.me/animate
-Licensed under the MIT license - http://opensource.org/licenses/MIT
 
-Copyright (c) 2015 Daniel Eden
-*/
 
 .animated {
     -webkit-animation-duration: 1s;
@@ -387,8 +359,6 @@ Copyright (c) 2015 Daniel Eden
     animation-name: fadeOutUp;
 }
 
-
-/* perfect-scrollbar v0.6.13 */
 
 .ps-container {
     -ms-touch-action: auto;
@@ -650,7 +620,7 @@ h2.title {
 .wrapper {
     position: relative;
     top: 0;
-    height: 100vh;
+    height: 100%;
 }
 
 .sidebar,
@@ -667,7 +637,7 @@ h2.title {
 .off-canvas-sidebar .sidebar-wrapper {
     position: relative;
     height: calc(100vh - 75px);
-    overflow: auto;
+    overflow-y: scroll;
     width: 260px;
     z-index: 4;
 }
@@ -702,7 +672,7 @@ h2.title {
     height: 61px;
     width: 61px;
     float: left;
-    overflow: hidden;
+  
 }
 
 .sidebar .logo-tim img,
@@ -2406,10 +2376,17 @@ body.inverse .card .form-control {
     background-color: initial;
     color: initial;
 }
+.card-header card-chart{
+    height: 100%;
+    overflow-y: scroll;
+}
 
 .wrapper.wrapper-full-page {
     height: auto;
     min-height: 100vh;
+}
+.card{
+    
 }
 
 blockquote p {
@@ -5112,7 +5089,7 @@ footer .btn {
 .card .card-image {
     height: 60%;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
     margin-left: 15px;
     margin-right: 15px;
     margin-top: -30px;

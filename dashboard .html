@@ -18,19 +18,15 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-    <!-- chart js -->
+     <!-- chartjs script-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 
 </head>
 
-<body>
+<body >
     <div class="wrapper">
-        <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
+        <div class="sidebar" data-color="red" data-image="img/sidebar-2.jpg">
 
-        Tip 2: you can also add an image using data-image tag
-    -->
             <div class="logo">
                 <a href="" class="simple-text">
                     WisOpt Dashboard
@@ -43,6 +39,7 @@
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
+
                     </li>
                     <li>
                         <a href="">
@@ -200,7 +197,8 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="" data-background-color="green">
-                                    <div class="" id=""></div>
+                                    <div class="" id="">
+                                    </div>
                                 </div>
                                 <div class="card-content">
                                     <h4 class="title"></h4>
@@ -220,10 +218,11 @@
                      <div class="row">
                         <div class="col-md-6">
                             <div class="card">
-                                <div class="card-header card-chart" data-background-color="green">
+                                <div class="card-header card-chart" data-background-color="red">
                                     <div class="" id="">
-                                     <canvas id="myPieChart"></canvas>
-                                   </div>
+                                      <canvas id="myChart"></canvas>
+
+                                     </div>
                                 </div>
                                 <div class="card-content">
                                     <h4 class="title"></h4>
@@ -240,12 +239,105 @@
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header card-chart" data-background-color="orange">
-                                    <div class="" >
-                                      <canvas id="myChart"></canvas>
+                                    <div class="" id="">
+                                      <canvas id="myPieChart"></canvas>
+
                                     </div>
                                 </div>
                                 <div class="card-content">
-                                    <h4 class="title">hi</h4>
+                                    <h4 class="title"></h4>
+                                    <p class="category"></p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header card-chart" data-background-color="black">
+                                    <div class="" id="">
+                                      <canvas id="myPolarChart"></canvas>
+
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title"></h4>
+                                    <p class="category">
+                                        <span class="text-success"><i class=""></i> </span> </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header card-chart" data-background-color="green">
+                                    <div class="" id="">
+                                      <canvas id="myHoriChart"></canvas>
+
+                                    </div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title"></h4>
+                                    <p class="category"></p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                         <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header card-chart" data-background-color="red">
+                                    <div class="" id=""> </div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title"></h4>
+                                    <p class="category">
+                                        <span class="text-success"><i class=""></i> </span> </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header card-chart" data-background-color="grey">
+                                    <div class="" id=""></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title"></h4>
+                                    <p class="category"></p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="stats">
+                                        <i class="material-icons"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-header card-chart" data-background-color="blue">
+                                    <div class="" id=""></div>
+                                </div>
+                                <div class="card-content">
+                                    <h4 class="title"></h4>
                                     <p class="category"></p>
                                 </div>
                                 <div class="card-footer">
@@ -282,21 +374,21 @@
                             </li>
                         </ul>
                     </nav>
-                    <p class="copyright pull-right">
-                        &copy;
-                        <script>
-                            document.write(new Date().getFullYear())
 
-                        </script>
-                    </p>
+
+
+
                 </div>
             </footer>
         </div>
-    </div>
+
     <script src="./charts/bar_chart.js"></script>
     <script src="./charts/line_chart.js"></script>
+    <script src="./charts/horizontal_bar.js"></script>
+    <script src="./charts/radar_chart.js"></script>
 
-  </body>
+
+</body>
 
 
 </html>
